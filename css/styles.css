@@ -1,0 +1,99 @@
+:root {
+  --color-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-nav: hsl(200, 76%, 72%);
+  --color-design: hsl(167, 40%, 24%);
+  --color-photography: hsl(198, 62%, 26%);
+  --color-footer: hsl(168, 34%, 41%);
+
+  --color-dark-blue: hsl(212, 27%, 19%);
+  --color-very-dark-gray-blue: hsl(213, 9%, 39%);
+  --color-dark-gray-blue: hsl(232, 10%, 55%);
+  --color-gray-blue: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  font-family: 'Barlow';
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1rem;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* navbar  */
+.nav {
+  background: var(--color-nav);
+  padding: 3.4rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav .nav__logo {
+  width: 100%;
+  max-width: 12.5rem;
+}
+
+.nav__menu > span {
+  display: block;
+  width: 26px;
+  height: 1px;
+  background-color: white;
+  transition: all 300ms ease-in-out;
+}
+.nav__menu > span:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-color: white;
+}
+
+.nav_list {
+  padding: 4.5rem;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.nav__list a {
+  color: var(--color-dark-gray-blue);
+  font-size: 1.3rem;
+}
+.width-100 {
+  width: 100%;
+  position: relative;
+}
+

@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 6.5rem;
+  text-align: center;
+  background-color: hsl(167, 44%, 70%);
+  color: $darkModCyan;
+
+  &__title {
+    margin-bottom: 4.4rem;
+    path {
+      fill: hsl(166, 41%, 34%);
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: $darkModCyan;
+    }
+  }
+
+  &__social {
+    padding-top: 8.5rem;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      margin: 0 1.4rem 7.6rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 7rem;
+
+    &__links {
+      display: block;
+      a {
+        padding-left: 5.6rem;
+      }
+    }
+  }
+}
